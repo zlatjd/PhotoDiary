@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="kr.effrot.photoapp.ShowPhotoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_show_image_detail_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#000"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:textSize="18sp" />
+
+
+        <GridView
+            android:id="@+id/gv_show_image_detail_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="90dp"
+            android:gravity="center"
+            android:numColumns="auto_fit"
+            android:overScrollMode="never"
+            android:stretchMode="spacingWidth"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_show_photo_image_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="#fff"
+            android:text="이 폴더에 사진 추가"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

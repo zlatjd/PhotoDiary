@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="kr.effrot.photoapp.MainActivity">
+
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:gravity="center"
+                android:text="Photo Diary"
+                android:textStyle="bold|italic"
+                android:textColor="#000"
+                android:textSize="22sp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#706f6f" />
+
+
+    <TextView
+        android:id="@+id/tv_main_folder_count_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:textSize="18sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- <GridView
+             android:id="@+id/gv_all_image"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:columnWidth="90dp"
+             android:gravity="center"
+             android:numColumns="auto_fit"
+             android:overScrollMode="never"
+             android:stretchMode="spacingWidth" >
+
+         </GridView>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_main_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never" />
+
+
+            <Button
+                android:id="@+id/btn_folder_add"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:text="+"
+                android:background="@drawable/round"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_empty_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="검색 결과가 없습니다."
+            android:textColor="#000"
+            android:textSize="23sp" />
+
+        <!--<Button
+            android:id="@+id/btn_photo_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사진저장"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />-->
+
+
+        <!-- <Button
+             android:id="@+id/btn_db_create"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="DB생성" />
+
+         <Button
+             android:id="@+id/btn_db_delete"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="DB삭제" />-->
+
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="주소 정보 없음"/>
+
+
+        <Button
+            android:id="@+id/btn_gps_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주소 불러오기" />-->
+
+        <!-- <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Hello World!"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintRight_toRightOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />-->
+    </LinearLayout>
+
+</LinearLayout>

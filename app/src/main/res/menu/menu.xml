@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/menu_cancel"
+            android:title="취소"
+            app:showAsAction="ifRoom" />
+
+    </group>-->
+
+    <item
+        android:id="@+id/menu_delete"
+        android:title="삭제"
+        app:showAsAction="always"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/menu_modify"
+        android:title="편집"
+        app:showAsAction="always"/>
+</menu>
